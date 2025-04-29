@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_LayoutCustom</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Home", "Student")</li>
+                    <li>@Html.ActionLink("Education", "Educations", "Student")</li>
+                    <li>@Html.ActionLink("Project", "Projects", "Student")</li>
+                    <li>@Html.ActionLink("Ref","Ref","Student") </li>
+                </ul>
+            </div>
+            <div>
+                @RenderBody()
+            </div>
+</body>
+</html>

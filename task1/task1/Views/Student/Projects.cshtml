@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+}
+
+    @foreach (var item in Model)
+    {
+        <ul>
+            <li>
+                <strong>Course: </strong>@item.Course
+                <ul>
+                    <li><strong>Title: </strong>@item.Title</li>
+                    <li><strong>Grade: </strong>@item.Grade</li>
+                </ul>
+            </li>
+        </ul>
+    }
+
